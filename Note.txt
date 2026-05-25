@@ -1,0 +1,23 @@
+uses
+  windows, Messages;
+
+var
+  ParentHwnd, TextboxHwnd: HWND;
+  myHwnd: HWND;
+
+begin
+
+{Not work yet}
+// 1. Get the handle of the main application window (example)
+  ParentHwnd := FindWindow(nil, 'Form1');
+//showmessage(ParentHwnd.ToString);
+// 2. Find the textbox (class 'Edit') inside the parent window
+  if ParentHwnd <> 0 then
+    TextboxHwnd := FindWindowEx(ParentHwnd, 0, 'Edit2', nil);
+//showmessage(TextboxHwnd.ToString);
+
+{Work ok}
+myHwnd:=edit2.Handle;
+SendMessage(myHwnd, WM_SETTEXT, 0, LPARAM(PChar('Your string here')));
+
+end;

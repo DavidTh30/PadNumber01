@@ -1,0 +1,693 @@
+object Form4: TForm4
+  Left = 429
+  Height = 303
+  Top = 103
+  Width = 419
+  Caption = 'Free Number'
+  ClientHeight = 303
+  ClientWidth = 419
+  Color = clInfoBk
+  Position = poWorkAreaCenter
+  LCLVersion = '4.6.0.0'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object Edit1: TEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Splitter15
+    Left = 4
+    Height = 26
+    Top = 2
+    Width = 412
+    Alignment = taRightJustify
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    AutoSize = False
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 2
+    BorderSpacing.Right = 3
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 29
+    OnKeyDown = Edit1KeyDown
+  end
+  object Splitter15: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 119
+    Height = 4
+    Top = 28
+    Width = 150
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Splitter14: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 119
+    Height = 4
+    Top = 52
+    Width = 150
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Splitter13: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 119
+    Height = 4
+    Top = 75
+    Width = 150
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Splitter10: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 119
+    Height = 4
+    Top = 180
+    Width = 150
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Splitter11: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 119
+    Height = 4
+    Top = 140
+    Width = 150
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Splitter12: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 119
+    Height = 4
+    Top = 100
+    Width = 150
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Splitter1: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 52
+    Height = 230
+    Top = 73
+    Width = 4
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Splitter2: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 104
+    Height = 230
+    Top = 73
+    Width = 4
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Splitter3: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 156
+    Height = 230
+    Top = 73
+    Width = 4
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Label2: TLabel
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Splitter14
+    Left = 4
+    Height = 19
+    Top = 33
+    Width = 415
+    Anchors = [akLeft, akRight, akBottom]
+    AutoSize = False
+    Caption = 'Org: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label1: TLabel
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Splitter13
+    Left = 4
+    Height = 19
+    Top = 56
+    Width = 415
+    Anchors = [akLeft, akRight, akBottom]
+    AutoSize = False
+    Caption = 'Max: 100'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Splitter12
+    Left = 4
+    Height = 19
+    Top = 80
+    Width = 415
+    Anchors = [akLeft, akRight, akBottom]
+    AutoSize = False
+    BorderSpacing.Bottom = 1
+    Caption = 'Min: 0 '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Splitter8: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 119
+    Height = 4
+    Top = 260
+    Width = 150
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Splitter9: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 119
+    Height = 4
+    Top = 220
+    Width = 150
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Splitter4: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 208
+    Height = 230
+    Top = 73
+    Width = 4
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Splitter5: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 260
+    Height = 230
+    Top = 73
+    Width = 4
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Splitter6: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 312
+    Height = 230
+    Top = 73
+    Width = 4
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Splitter7: TSplitter
+    AnchorSideBottom.Side = asrBottom
+    Left = 364
+    Height = 230
+    Top = 73
+    Width = 4
+    Align = alNone
+    Anchors = []
+    Color = clInfoBk
+    ParentColor = False
+  end
+  object Button7: TButton
+    AnchorSideTop.Control = Splitter11
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter1
+    AnchorSideBottom.Control = Splitter10
+    Left = 4
+    Height = 36
+    Top = 144
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '+'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 34
+    TabStop = False
+    OnClick = Button7Click
+  end
+  object Button8: TButton
+    AnchorSideLeft.Control = Splitter1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter11
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter2
+    AnchorSideBottom.Control = Splitter10
+    Left = 56
+    Height = 36
+    Top = 144
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '+'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 35
+    TabStop = False
+    OnClick = Button8Click
+  end
+  object Button9: TButton
+    AnchorSideLeft.Control = Splitter2
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter11
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter3
+    AnchorSideBottom.Control = Splitter10
+    Left = 108
+    Height = 36
+    Top = 144
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '+'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 10
+    TabStop = False
+    OnClick = Button9Click
+  end
+  object Button10: TButton
+    AnchorSideLeft.Control = Splitter3
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter11
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter4
+    AnchorSideBottom.Control = Splitter10
+    Left = 160
+    Height = 36
+    Top = 144
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '+'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 9
+    TabStop = False
+    OnClick = Button10Click
+  end
+  object Button11: TButton
+    AnchorSideLeft.Control = Splitter4
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter11
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter5
+    AnchorSideBottom.Control = Splitter10
+    Left = 212
+    Height = 36
+    Top = 144
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '+'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 8
+    TabStop = False
+    OnClick = Button11Click
+  end
+  object Button12: TButton
+    AnchorSideLeft.Control = Splitter5
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter11
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter6
+    AnchorSideBottom.Control = Splitter10
+    Left = 264
+    Height = 36
+    Top = 144
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '+'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 7
+    TabStop = False
+    OnClick = Button12Click
+  end
+  object Button13: TButton
+    AnchorSideLeft.Control = Splitter6
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter11
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter7
+    AnchorSideBottom.Control = Splitter10
+    Left = 316
+    Height = 36
+    Top = 144
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '+'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 6
+    TabStop = False
+    OnClick = Button13Click
+  end
+  object Button14: TButton
+    AnchorSideLeft.Control = Splitter7
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter11
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Splitter10
+    Left = 368
+    Height = 36
+    Top = 144
+    Width = 47
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Right = 4
+    Caption = '+'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 5
+    TabStop = False
+    OnClick = Button14Click
+  end
+  object Button15: TButton
+    AnchorSideTop.Control = Splitter10
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter1
+    AnchorSideBottom.Control = Splitter9
+    Left = 4
+    Height = 36
+    Top = 184
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 22
+    TabStop = False
+    OnClick = Button15Click
+  end
+  object Button16: TButton
+    AnchorSideLeft.Control = Splitter1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter10
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter2
+    AnchorSideBottom.Control = Splitter9
+    Left = 56
+    Height = 36
+    Top = 184
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 20
+    TabStop = False
+    OnClick = Button16Click
+  end
+  object Button17: TButton
+    AnchorSideLeft.Control = Splitter2
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter10
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter3
+    AnchorSideBottom.Control = Splitter9
+    Left = 108
+    Height = 36
+    Top = 184
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 19
+    TabStop = False
+    OnClick = Button17Click
+  end
+  object Button18: TButton
+    AnchorSideLeft.Control = Splitter3
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter10
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter4
+    AnchorSideBottom.Control = Splitter9
+    Left = 160
+    Height = 36
+    Top = 184
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 18
+    TabStop = False
+    OnClick = Button18Click
+  end
+  object Button19: TButton
+    AnchorSideLeft.Control = Splitter4
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter10
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter5
+    AnchorSideBottom.Control = Splitter9
+    Left = 212
+    Height = 36
+    Top = 184
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 17
+    TabStop = False
+    OnClick = Button19Click
+  end
+  object Button20: TButton
+    AnchorSideLeft.Control = Splitter5
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter10
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter6
+    AnchorSideBottom.Control = Splitter9
+    Left = 264
+    Height = 36
+    Top = 184
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 16
+    TabStop = False
+    OnClick = Button20Click
+  end
+  object Button21: TButton
+    AnchorSideLeft.Control = Splitter6
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter10
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter7
+    AnchorSideBottom.Control = Splitter9
+    Left = 316
+    Height = 36
+    Top = 184
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 12
+    TabStop = False
+    OnClick = Button21Click
+  end
+  object Button22: TButton
+    AnchorSideLeft.Control = Splitter7
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter10
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Splitter9
+    Left = 368
+    Height = 36
+    Top = 184
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Right = 3
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 11
+    TabStop = False
+    OnClick = Button22Click
+  end
+  object Apply_Butt: TButton
+    AnchorSideLeft.Control = Splitter4
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter9
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter5
+    AnchorSideBottom.Control = Splitter8
+    Left = 212
+    Height = 36
+    Top = 224
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Apply'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 15
+    TabStop = False
+    OnClick = Apply_ButtClick
+  end
+  object ApplyAndExit_Butt: TButton
+    AnchorSideLeft.Control = Splitter5
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter9
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Splitter7
+    AnchorSideBottom.Control = Splitter8
+    Left = 264
+    Height = 36
+    Top = 224
+    Width = 100
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Apply And Exit'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 14
+    TabStop = False
+    OnClick = ApplyAndExit_ButtClick
+  end
+  object ESC_Butt: TButton
+    AnchorSideLeft.Control = Splitter7
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Splitter9
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Splitter8
+    Left = 368
+    Height = 36
+    Top = 224
+    Width = 48
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Right = 3
+    Caption = 'Esc'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 13
+    TabStop = False
+    OnClick = ESC_ButtClick
+  end
+  object Memo1: TMemo
+    Left = 272
+    Height = 112
+    Top = 28
+    Width = 143
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 1
+    TabStop = False
+    Visible = False
+  end
+end

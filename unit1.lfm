@@ -1,0 +1,86 @@
+object Form1: TForm1
+  Left = 431
+  Height = 275
+  Top = 368
+  Width = 634
+  Caption = 'PadNumber_52_6_2026'
+  ClientHeight = 275
+  ClientWidth = 634
+  Position = poWorkAreaCenter
+  LCLVersion = '4.6.0.0'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  object Edit1: TEdit
+    Left = 8
+    Height = 27
+    Top = 24
+    Width = 187
+    Alignment = taRightJustify
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 0
+    OnClick = Edit1Click
+  end
+  object Label1: TLabel
+    Left = 260
+    Height = 13
+    Top = 31
+    Width = 31
+    Caption = 'Label1'
+  end
+  object Edit2: TEdit
+    Left = 8
+    Height = 27
+    Top = 56
+    Width = 187
+    Alignment = taRightJustify
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 1
+    OnClick = Edit2Click
+  end
+  object Edit3: TEdit
+    Left = 8
+    Height = 27
+    Top = 88
+    Width = 187
+    Alignment = taRightJustify
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 2
+    OnClick = Edit3Click
+  end
+  object Edit4: TEdit
+    Left = 8
+    Height = 27
+    Top = 120
+    Width = 187
+    Alignment = taRightJustify
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 3
+    OnClick = Edit4Click
+  end
+  object IdleTimer1: TIdleTimer
+    Interval = 500
+    OnTimer = IdleTimer1Timer
+    Left = 468
+    Top = 83
+  end
+end
